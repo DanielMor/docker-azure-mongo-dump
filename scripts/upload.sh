@@ -29,6 +29,7 @@ az storage blob upload \
     --container-name $AZURE_STORAGE_CONTAINER \
     --name $FILENAME \
     --file $FILE \
+    --content-type "application/gzip" \
     --account-name $AZURE_STORAGE_ACCOUNT \
     --account-key $AZURE_STORAGE_ACCESS_KEY
 
